@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
   </head>
+  
+  <!--다이얼로그 플로우 코드를 붙여넣기 함.-->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    intent="WELCOME"
+    chat-title="LMSChat"
+    agent-id="a3ea6508-62c4-4325-bb90-c0f982f3aaa0"
+    language-code="ko"
+  ></df-messenger>  
+  
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
